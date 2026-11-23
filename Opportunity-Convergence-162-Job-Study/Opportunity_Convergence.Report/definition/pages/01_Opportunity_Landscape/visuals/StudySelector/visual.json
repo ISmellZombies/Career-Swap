@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "StudySelector",
+  "position": {
+    "x": 1200,
+    "y": 26,
+    "z": 1000,
+    "height": 62,
+    "width": 352,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "StudyID"
+                }
+              },
+              "queryRef": "Jobs.StudyID",
+              "nativeQueryRef": "StudyID",
+              "active": true,
+              "displayName": "StudyID"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

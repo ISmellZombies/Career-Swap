@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "Filter1",
+  "position": {
+    "x": 348,
+    "y": 70,
+    "z": 2000,
+    "height": 52,
+    "width": 286,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobSource"
+                }
+              },
+              "queryRef": "Jobs.JobSource",
+              "nativeQueryRef": "JobSource",
+              "active": true,
+              "displayName": "JobSource"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

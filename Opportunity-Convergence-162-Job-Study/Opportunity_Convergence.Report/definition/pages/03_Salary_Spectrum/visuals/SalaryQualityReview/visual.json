@@ -1,0 +1,200 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "SalaryQualityReview",
+  "position": {
+    "x": 47.416413373860181,
+    "y": 737.99392097264433,
+    "z": 5000,
+    "height": 161.70212765957447,
+    "width": 1505.1671732522796,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobID"
+                }
+              },
+              "queryRef": "Jobs.JobID",
+              "nativeQueryRef": "JobID",
+              "active": true,
+              "displayName": "JobID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "RowLabel"
+                }
+              },
+              "queryRef": "Jobs.RowLabel",
+              "nativeQueryRef": "RowLabel",
+              "active": true,
+              "displayName": "RowLabel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryStatus"
+                }
+              },
+              "queryRef": "Jobs.SalaryStatus",
+              "nativeQueryRef": "SalaryStatus",
+              "active": true,
+              "displayName": "SalaryStatus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryTextRaw"
+                }
+              },
+              "queryRef": "Jobs.SalaryTextRaw",
+              "nativeQueryRef": "SalaryTextRaw",
+              "active": true,
+              "displayName": "SalaryTextRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryEntryRaw"
+                }
+              },
+              "queryRef": "Jobs.SalaryEntryRaw",
+              "nativeQueryRef": "SalaryEntryRaw",
+              "active": true,
+              "displayName": "SalaryEntryRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryMidRaw"
+                }
+              },
+              "queryRef": "Jobs.SalaryMidRaw",
+              "nativeQueryRef": "SalaryMidRaw",
+              "active": true,
+              "displayName": "SalaryMidRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalarySeniorRaw"
+                }
+              },
+              "queryRef": "Jobs.SalarySeniorRaw",
+              "nativeQueryRef": "SalarySeniorRaw",
+              "active": true,
+              "displayName": "SalarySeniorRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "NotesRaw"
+                }
+              },
+              "queryRef": "Jobs.NotesRaw",
+              "nativeQueryRef": "NotesRaw",
+              "active": true,
+              "displayName": "NotesRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "ExtraNotesRaw"
+                }
+              },
+              "queryRef": "Jobs.ExtraNotesRaw",
+              "nativeQueryRef": "ExtraNotesRaw",
+              "active": true,
+              "displayName": "ExtraNotesRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "StudyID"
+                }
+              },
+              "queryRef": "Jobs.StudyID",
+              "nativeQueryRef": "StudyID",
+              "active": true,
+              "displayName": "StudyID"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Jobs"
+                  }
+                },
+                "Property": "SalaryStatus"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    }
+  }
+}

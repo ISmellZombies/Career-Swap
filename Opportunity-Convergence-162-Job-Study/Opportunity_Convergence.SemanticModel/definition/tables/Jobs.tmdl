@@ -1,0 +1,382 @@
+table Jobs
+	lineageTag: 2903a5ba-5153-4579-9ec1-6e7baf102b16
+
+	measure Opportunities = COUNTROWS ( Jobs )
+		formatString: #,0
+		lineageTag: 15c1d0c5-fb0f-4b99-b273-22b480ea64cf
+
+	measure 'Eligible Opportunities' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[Eligible] = TRUE () ) )
+		formatString: #,0
+		lineageTag: 32b52f00-1ab0-47dd-8af8-9f67227715b3
+
+	measure 'Eligibility Rate' = DIVIDE ( [Eligible Opportunities], [Opportunities] )
+		formatString: 0.0%
+		lineageTag: 15a506a0-3fb7-4a68-8e83-62fd65ed6b32
+
+	measure Applications = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[Applied] = 1 ) )
+		formatString: #,0
+		lineageTag: 983f8b78-bdbe-4bca-9e4d-2c88f946a6d0
+
+	measure 'Application Rate' = DIVIDE ( [Applications], [Opportunities] )
+		formatString: 0.0%
+		lineageTag: 6e96c38e-55e6-4dc5-8c37-8471b7dd25c9
+
+	measure 'Mean Fit' = AVERAGE ( Jobs[FitScore] )
+		formatString: 0.0%
+		lineageTag: d5d64b24-a9f3-4a08-a25e-2d57a57025d7
+
+	measure 'Median Fit' = MEDIAN ( Jobs[FitScore] )
+		formatString: 0.0%
+		lineageTag: 637fbf8b-eb26-414f-b24a-42143798f712
+
+	measure 'At Target 80' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[FitScore] >= 0.80 ) )
+		formatString: #,0
+		lineageTag: 94063e02-2e78-4c14-8f31-0da5a5ddbcae
+
+	measure 'Tolerance 75 to 79' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[FitScore] >= 0.75 ), KEEPFILTERS ( Jobs[FitScore] < 0.80 ) )
+		formatString: #,0
+		lineageTag: 50fe6673-593f-4a85-b2a2-c12ffb94d891
+
+	measure 'Eligible Applications' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[Eligible] = TRUE () ), KEEPFILTERS ( Jobs[Applied] = 1 ) )
+		formatString: #,0
+		lineageTag: 4fb6548f-46e1-4c64-a029-7a5d04ae169d
+
+	measure 'Eligible Not Applied' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[Eligible] = TRUE () ), KEEPFILTERS ( Jobs[Applied] = 0 ) )
+		formatString: #,0
+		lineageTag: 554cf2be-e9dd-4fb7-a2f1-8a23966dd3f2
+
+	measure 'Below Threshold Applications' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[Eligible] = FALSE () ), KEEPFILTERS ( Jobs[Applied] = 1 ) )
+		formatString: #,0
+		lineageTag: 2db3135c-3e8c-4932-a404-41c74240da9c
+
+	measure 'Below Threshold Not Applied' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[Eligible] = FALSE () ), KEEPFILTERS ( Jobs[Applied] = 0 ) )
+		formatString: #,0
+		lineageTag: 3dfce5ac-41ca-44df-b6d3-2616c40cbfe2
+
+	measure 'Eligible Application Rate' = DIVIDE ( [Eligible Applications], [Eligible Opportunities] )
+		formatString: 0.0%
+		lineageTag: 7605b0aa-faf9-4cb5-ac37-bdd8d87941ca
+
+	measure 'Below Threshold Application Rate' = DIVIDE ( [Below Threshold Applications], [Opportunities] - [Eligible Opportunities] )
+		formatString: 0.0%
+		lineageTag: 722e0e22-9c14-4c1a-919d-9c6d4c268f81
+
+	measure 'Salary Displayable Count' = CALCULATE ( [Opportunities], KEEPFILTERS ( Jobs[SalaryStatus] = "Displayable as recorded" ) )
+		formatString: #,0
+		lineageTag: d846410e-8c7e-4f30-b1f0-52e26d716ed7
+
+	measure 'Salary Coverage' = DIVIDE ( [Salary Displayable Count], [Opportunities] )
+		formatString: 0.0%
+		lineageTag: 3b5a45e1-75cc-43a1-a8a6-c1e44feef673
+
+	measure 'Median Recorded Mid Salary' = CALCULATE ( MEDIAN ( Jobs[SalaryMidRaw] ), KEEPFILTERS ( Jobs[SalaryStatus] = "Displayable as recorded" ) )
+		formatString: $#,0
+		lineageTag: c92fbda8-1a58-46c0-9537-aa2f9acf998c
+
+	column JobID
+		dataType: string
+		lineageTag: 6ba013cb-3762-4436-8644-0ee91514bd65
+		summarizeBy: none
+		sourceColumn: JobID
+
+	column StudyID
+		dataType: string
+		lineageTag: 5527e73a-24b5-4b59-93d7-8c1bdd7f3e0e
+		summarizeBy: none
+		sourceColumn: StudyID
+
+	column SourceRow
+		dataType: int64
+		formatString: 0
+		lineageTag: f07622f2-6d68-4ed0-85f6-1c8d74a28d5b
+		summarizeBy: none
+		sourceColumn: SourceRow
+
+	column JobNo
+		dataType: int64
+		formatString: 0
+		lineageTag: d99762ee-1fc9-4203-b47f-14a20491b7bb
+		summarizeBy: none
+		sourceColumn: JobNo
+
+	column EmployerRaw
+		dataType: string
+		lineageTag: e093ff29-9bf5-4db6-afcf-07eb2def4012
+		summarizeBy: none
+		sourceColumn: EmployerRaw
+
+	column EmployerLabel
+		dataType: string
+		lineageTag: 9660505e-6bec-4774-84f4-bff08c0667bb
+		summarizeBy: none
+		sourceColumn: EmployerLabel
+
+	column WorkArrangementRaw
+		dataType: string
+		lineageTag: 87a65fa7-a0fb-4138-9a1c-c1dd5658a2a4
+		summarizeBy: none
+		sourceColumn: WorkArrangementRaw
+
+	column WorkArrangement
+		dataType: string
+		lineageTag: 5d378902-265e-49fc-bb52-51fd808432d3
+		summarizeBy: none
+		sourceColumn: WorkArrangement
+
+	column SearchTermRaw
+		dataType: string
+		lineageTag: 804851bc-88e6-494a-a3d9-daac2cef595c
+		summarizeBy: none
+		sourceColumn: SearchTermRaw
+
+	column FitScore
+		dataType: double
+		formatString: 0%
+		lineageTag: 8b0b7565-d8b2-4b2b-9c5e-96b1b2cc796b
+		summarizeBy: average
+		sourceColumn: FitScore
+
+	column Applied
+		dataType: int64
+		formatString: 0
+		lineageTag: 23cfd223-dbd9-4b5c-a25d-b651384eaf19
+		summarizeBy: sum
+		sourceColumn: Applied
+
+	column ReceivedRaw
+		dataType: int64
+		formatString: 0
+		lineageTag: eb8bf26f-93e2-4f27-a7e8-168c015a8f1d
+		summarizeBy: sum
+		sourceColumn: ReceivedRaw
+
+	column SuccessRaw
+		dataType: int64
+		formatString: 0
+		lineageTag: 726ea665-1a16-429d-9cff-e57b914279e8
+		summarizeBy: sum
+		sourceColumn: SuccessRaw
+
+	column SalaryTextRaw
+		dataType: string
+		lineageTag: 1a019241-20ae-419f-9baf-f5f31963362c
+		summarizeBy: none
+		sourceColumn: SalaryTextRaw
+
+	column SalaryEntryRaw
+		dataType: double
+		formatString: $#,0
+		lineageTag: 34c545e1-fc4f-4071-812e-cb974ba6f9f1
+		summarizeBy: none
+		sourceColumn: SalaryEntryRaw
+
+	column SalaryMidRaw
+		dataType: double
+		formatString: $#,0
+		lineageTag: 92a95761-1457-4655-a5c0-f59f61777314
+		summarizeBy: none
+		sourceColumn: SalaryMidRaw
+
+	column SalarySeniorRaw
+		dataType: double
+		formatString: $#,0
+		lineageTag: 021a4a53-8c73-49dc-a2f9-bd9406787584
+		summarizeBy: none
+		sourceColumn: SalarySeniorRaw
+
+	column LocationRaw
+		dataType: string
+		lineageTag: 3af8087f-34b6-42dd-ad17-7526c7a93ea2
+		summarizeBy: none
+		sourceColumn: LocationRaw
+
+	column JobTitleRaw
+		dataType: string
+		lineageTag: 99a0df7f-c066-482a-b424-a80616beb220
+		summarizeBy: none
+		sourceColumn: JobTitleRaw
+
+	column JobTitle
+		dataType: string
+		lineageTag: 1f4039b0-0ca5-47df-8cb3-cff1d317f781
+		summarizeBy: none
+		sourceColumn: JobTitle
+
+	column EmploymentTypeRaw
+		dataType: string
+		lineageTag: 96f4029e-6358-42ef-a00f-bf973028bfb3
+		summarizeBy: none
+		sourceColumn: EmploymentTypeRaw
+
+	column EmploymentType
+		dataType: string
+		lineageTag: 529d08a2-0fa6-4071-a5da-f2dc84ed6f6f
+		summarizeBy: none
+		sourceColumn: EmploymentType
+
+	column DutiesRaw
+		dataType: string
+		lineageTag: e2830867-3340-4bc6-9862-65c7fd6205f0
+		summarizeBy: none
+		sourceColumn: DutiesRaw
+
+	column JobFamilyRaw
+		dataType: string
+		lineageTag: b6909ce1-88be-4aa2-a769-81d6b78746f5
+		summarizeBy: none
+		sourceColumn: JobFamilyRaw
+
+	column JobFamily
+		dataType: string
+		lineageTag: 53157513-95a6-4f6f-8781-cc560d62763d
+		summarizeBy: none
+		sourceColumn: JobFamily
+
+	column PostingDateRaw
+		dataType: string
+		lineageTag: fdac8f92-26e3-4d7e-b2c4-2b0f794b5d76
+		summarizeBy: none
+		sourceColumn: PostingDateRaw
+
+	column PostingDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ad9d3020-4f88-421d-8b27-0ef57a436eaa
+		summarizeBy: none
+		sourceColumn: PostingDate
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column JobSourceRaw
+		dataType: string
+		lineageTag: 278a8431-ec1b-43ee-8393-080c094d08d2
+		summarizeBy: none
+		sourceColumn: JobSourceRaw
+
+	column JobSource
+		dataType: string
+		lineageTag: a6e27c73-0272-4acc-bb1d-56bc67e70f6e
+		summarizeBy: none
+		sourceColumn: JobSource
+
+	column NotesRaw
+		dataType: string
+		lineageTag: 10b10c99-d7e4-482a-8e14-cdb3c4151964
+		summarizeBy: none
+		sourceColumn: NotesRaw
+
+	column ExtraNotesRaw
+		dataType: string
+		lineageTag: 98a8c137-76cf-4798-a695-175b715610ad
+		summarizeBy: none
+		sourceColumn: ExtraNotesRaw
+
+	column IsArtifact
+		dataType: boolean
+		lineageTag: 229fa47c-252d-472b-8fb0-03a0a3fab256
+		summarizeBy: none
+		sourceColumn: IsArtifact
+
+	column FitBand
+		dataType: string
+		lineageTag: 24392073-067a-49ee-9d3f-cdca65e0b304
+		summarizeBy: none
+		sourceColumn: FitBand
+
+	column Eligible
+		dataType: boolean
+		lineageTag: 1818ffbb-789d-4c50-848d-ff567f82e148
+		summarizeBy: none
+		sourceColumn: Eligible
+
+	column DecisionQuadrant
+		dataType: string
+		lineageTag: c7dcedb4-8e71-4eaa-80da-7fc4bd050e84
+		summarizeBy: none
+		sourceColumn: DecisionQuadrant
+
+	column SalaryStatus
+		dataType: string
+		lineageTag: e68517d3-8c8a-4bf8-960b-142ab3c3eff2
+		summarizeBy: none
+		sourceColumn: SalaryStatus
+
+	column RowLabel
+		dataType: string
+		lineageTag: 7a71cbe7-649c-44da-a5a8-3095920cfd4a
+		summarizeBy: none
+		sourceColumn: RowLabel
+
+	partition Jobs = m
+		mode: import
+		source =
+				let
+					Source1 = Excel.Workbook(File.Contents(SourceRoot & "\Get a Job - Study 1-100.xlsx"), null, true),
+					Study1Sheet = Source1{[Item="Draft 1",Kind="Sheet"]}[Data],
+					Study1Rows = Table.FirstN(Table.Skip(Study1Sheet, 14), 103),
+					Study1Indexed = Table.AddIndexColumn(Study1Rows, "SourceRow", 15, 1, Int64.Type),
+					Source2 = Excel.Workbook(File.Contents(SourceRoot & "\Get a Job - study 2 100-200.xlsx"), null, true),
+					Study2Sheet = Source2{[Item="Draft 1",Kind="Sheet"]}[Data],
+					Study2Rows = Table.FirstN(Table.Skip(Study2Sheet, 14), 59),
+					Study2Indexed = Table.AddIndexColumn(Study2Rows, "SourceRow", 15, 1, Int64.Type),
+					RawText = (v as any) as nullable text => if v = null then null else Text.From(v, "en-US"),
+					Norm = (v as any) as nullable text => let s = if v = null then null else Text.Trim(Text.From(v, "en-US")), l = if s = null then "" else Text.Lower(s) in if List.Contains({"", "not_listed", "not listed", "n/a", "-"}, l) then null else s,
+					RawNumber = (v as any) as nullable number => try Number.From(v, "en-US") otherwise null,
+					ImportRows = (t as table, study as text, midCol as text, seniorCol as text, locationCol as text, titleCol as text, employmentCol as text, dutiesCol as text, familyCol as text, dateCol as text, sourceCol as text, notesCol as text, extraNotesCol as nullable text) as table =>
+						let
+							Records = Table.ToRecords(t),
+							Mapped = Table.FromRecords(List.Transform(Records, (r) =>
+								let
+									Value = (c as text) as any => Record.FieldOrDefault(r, c, null),
+									JobNo = Int64.From(RawNumber(Value("Column2"))),
+									EmployerRaw = RawText(Value("Column3")),
+									Received = try Int64.From(RawNumber(Value("Column7"))) otherwise null,
+									Success = try Int64.From(RawNumber(Value("Column8"))) otherwise null,
+									WorkRaw = RawText(Value("Column10")),
+									SearchRaw = RawText(Value("Column11")),
+									Fit = RawNumber(Value("Column13")),
+									Applied = Int64.From(RawNumber(Value("Column17"))),
+									SalaryText = RawText(Value("Column20")),
+									Entry = RawNumber(Value("Column22")),
+									Mid = RawNumber(Value(midCol)),
+									Senior = RawNumber(Value(seniorCol)),
+									LocationRaw = RawText(Value(locationCol)),
+									TitleRaw = RawText(Value(titleCol)),
+									EmploymentRaw = RawText(Value(employmentCol)),
+									DutiesRaw = RawText(Value(dutiesCol)),
+									FamilyRaw = RawText(Value(familyCol)),
+									DateValue = Value(dateCol),
+									DateRaw = RawText(DateValue),
+									SourceRaw = RawText(Value(sourceCol)),
+									NotesRaw = RawText(Value(notesCol)),
+									ExtraRaw = if extraNotesCol = null then null else RawText(Value(extraNotesCol)),
+									Employer = Norm(EmployerRaw),
+									WorkN = Norm(WorkRaw),
+									Work = if WorkN = null then "Not specified" else if Text.Lower(WorkN) = "remote" then "Remote" else if List.Contains({"hybrid", "hyrbid"}, Text.Lower(WorkN)) then "Hybrid" else if List.Contains({"on-site", "on site", "onsite"}, Text.Lower(WorkN)) then "On-site" else "Not specified",
+									EmploymentN = Norm(EmploymentRaw),
+									Employment = if EmploymentN = null then "Not specified" else if List.Contains({"full time", "full_time", "full-time"}, Text.Lower(EmploymentN)) then "Full-time" else if List.Contains({"contract", "cointract"}, Text.Lower(EmploymentN)) then "Contract" else "Not specified",
+									Title = Norm(TitleRaw),
+									FamilyN = Norm(FamilyRaw),
+									Family = if FamilyN = null and study = "Study2" then "Not classified" else if FamilyN = null then "Not specified" else FamilyN,
+									Eligible = Fit >= 0.75,
+									FitBand = if Fit >= 0.80 then "Target: 80–100%" else if Fit >= 0.75 then "Tolerance: 75–<80%" else "Below minimum: <75%",
+									Quadrant = if Eligible and Applied = 1 then "Qualified / Applied" else if Eligible then "Qualified / Not applied" else if Applied = 1 then "Below / Applied" else "Below / Not applied",
+									Annuality = if SalaryText = null then false else List.AnyTrue(List.Transform({"monthly", "month", "hour", "/hr", "/hour", "week", "/week", "day", "/day"}, each Text.Contains(Text.Lower(SalaryText), _))),
+									SalaryStatus = if Entry = null or Mid = null or Senior = null then "Incomplete" else if Annuality then "Nonannual explicit" else if not (Entry <= Mid and Mid <= Senior) then "Invalid range" else if Text.Contains(Text.Lower(Text.Combine(List.RemoveNulls({NotesRaw, ExtraRaw}), " ")), "peso") then "Non-USD noted" else "Displayable as recorded",
+									PostingDate = if Value.Is(DateValue, type number) then Date.AddDays(#date(1899, 12, 30), Number.RoundDown(DateValue)) else if Value.Is(DateValue, type date) then DateValue else null,
+									Artifact = FamilyN <> null and Text.Lower(FamilyN) = "n/a (artifact)",
+									EmployerLabel = if Employer = null then "(Employer not listed)" else Employer,
+									RowLabel = (if Employer = null then "(Employer not listed)" else Employer) & " · " & (if Title = null then "(Title not listed)" else Title)
+								in
+									[StudyID=study, SourceRow=Int64.From(Value("SourceRow")), JobNo=JobNo, JobID=study & "-" & Text.PadStart(Text.From(JobNo),3,"0"), EmployerRaw=EmployerRaw, EmployerLabel=EmployerLabel, ReceivedRaw=Received, SuccessRaw=Success, WorkArrangementRaw=WorkRaw, WorkArrangement=Work, SearchTermRaw=SearchRaw, FitScore=Fit, Applied=Applied, SalaryTextRaw=SalaryText, SalaryEntryRaw=Entry, SalaryMidRaw=Mid, SalarySeniorRaw=Senior, LocationRaw=LocationRaw, JobTitleRaw=TitleRaw, JobTitle=Title, EmploymentTypeRaw=EmploymentRaw, EmploymentType=Employment, DutiesRaw=DutiesRaw, JobFamilyRaw=FamilyRaw, JobFamily=Family, PostingDateRaw=DateRaw, PostingDate=PostingDate, JobSourceRaw=SourceRaw, JobSource=if Norm(SourceRaw)=null then "Not specified" else Norm(SourceRaw), NotesRaw=NotesRaw, ExtraNotesRaw=ExtraRaw, IsArtifact=Artifact, FitBand=FitBand, Eligible=Eligible, DecisionQuadrant=Quadrant, SalaryStatus=SalaryStatus, RowLabel=RowLabel]
+							)),
+							Typed = Table.TransformColumnTypes(Mapped, {{"StudyID", type text},{"SourceRow", Int64.Type},{"JobNo", Int64.Type},{"JobID", type text},{"EmployerRaw", type text},{"EmployerLabel", type text},{"ReceivedRaw", Int64.Type},{"SuccessRaw", Int64.Type},{"WorkArrangementRaw", type text},{"WorkArrangement", type text},{"SearchTermRaw", type text},{"FitScore", type number},{"Applied", Int64.Type},{"SalaryTextRaw", type text},{"SalaryEntryRaw", type number},{"SalaryMidRaw", type number},{"SalarySeniorRaw", type number},{"LocationRaw", type text},{"JobTitleRaw", type text},{"JobTitle", type text},{"EmploymentTypeRaw", type text},{"EmploymentType", type text},{"DutiesRaw", type text},{"JobFamilyRaw", type text},{"JobFamily", type text},{"PostingDateRaw", type text},{"PostingDate", type date},{"JobSourceRaw", type text},{"JobSource", type text},{"NotesRaw", type text},{"ExtraNotesRaw", type text},{"IsArtifact", type logical},{"FitBand", type text},{"Eligible", type logical},{"DecisionQuadrant", type text},{"SalaryStatus", type text},{"RowLabel", type text}}, "en-US")
+						in
+							Typed,
+					Study1Source = ImportRows(Study1Indexed, "Study1", "Column28", "Column34", "Column41", "Column44", "Column45", "Column47", "Column48", "Column49", "Column50", "Column52", null),
+					Study2Source = ImportRows(Study2Indexed, "Study2", "Column29", "Column35", "Column42", "Column45", "Column46", "Column48", "Column49", "Column50", "Column51", "Column53", "Column55"),
+					Jobs = Table.Combine({Study1Source, Study2Source}),
+					Sorted = Table.Sort(Jobs, {{"StudyID", Order.Ascending},{"JobNo", Order.Ascending}})
+				in
+					Sorted
+

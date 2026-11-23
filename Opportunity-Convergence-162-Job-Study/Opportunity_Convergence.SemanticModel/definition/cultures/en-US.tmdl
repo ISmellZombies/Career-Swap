@@ -1,0 +1,578 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "jobs.jobid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "JobID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "JobID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.studyid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "StudyID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "StudyID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.jobno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "JobNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "JobNo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.employerlabel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "EmployerLabel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EmployerLabel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.jobtitle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "JobTitle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "JobTitle": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.rowlabel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "RowLabel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RowLabel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.locationraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "LocationRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LocationRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.workarrangement": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "WorkArrangement"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "WorkArrangement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.jobsource": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "JobSource"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "JobSource": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.employmenttype": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "EmploymentType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EmploymentType": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.fitscore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "FitScore"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FitScore": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.eligible": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "Eligible"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Eligible": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.applied": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "Applied"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Applied": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.fitband": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "FitBand"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FitBand": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.decisionquadrant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "DecisionQuadrant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DecisionQuadrant": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.jobfamily": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "JobFamily"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "JobFamily": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.dutiesraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "DutiesRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DutiesRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.searchtermraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SearchTermRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SearchTermRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.salarystatus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SalaryStatus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SalaryStatus": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.salaryentryraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SalaryEntryRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SalaryEntryRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.salarymidraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SalaryMidRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SalaryMidRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.salaryseniorraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SalarySeniorRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SalarySeniorRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.receivedraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "ReceivedRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ReceivedRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.successraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SuccessRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SuccessRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.salarytextraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "SalaryTextRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SalaryTextRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.notesraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "NotesRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NotesRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "jobs.extranotesraw": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Jobs",
+			          "ConceptualProperty": "ExtraNotesRaw"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ExtraNotesRaw": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

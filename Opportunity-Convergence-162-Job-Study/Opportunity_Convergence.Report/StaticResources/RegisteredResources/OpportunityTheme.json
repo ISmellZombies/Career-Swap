@@ -1,0 +1,53 @@
+{
+  "name": "Opportunity Convergence",
+  "dataColors": [
+    "#FF0056",
+    "#FFAD49",
+    "#FFF873",
+    "#BAF6D6",
+    "#42ED9C",
+    "#B2E76A",
+    "#7ACF42",
+    "#2CAE43"
+  ],
+  "background": "#FAFCF9",
+  "foreground": "#1D3329",
+  "tableAccent": "#2CAE43",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontFamily": "Segoe UI",
+            "fontSize": 14,
+            "color": {
+              "solid": {
+                "color": "#1D3329"
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "fontFamily": "Segoe UI",
+            "color": {
+              "solid": {
+                "color": "#1D3329"
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

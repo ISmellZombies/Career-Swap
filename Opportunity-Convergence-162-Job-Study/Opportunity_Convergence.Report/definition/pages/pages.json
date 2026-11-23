@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "01_Opportunity_Landscape",
+    "02_Skills_Convergence",
+    "03_Salary_Spectrum"
+  ],
+  "activePageName": "01_Opportunity_Landscape"
+}

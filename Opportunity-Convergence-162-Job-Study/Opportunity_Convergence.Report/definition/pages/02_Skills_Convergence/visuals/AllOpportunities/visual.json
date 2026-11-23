@@ -1,0 +1,357 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "AllOpportunities",
+  "position": {
+    "x": 47.416413373860181,
+    "y": 765.95744680851067,
+    "z": 0,
+    "height": 115.5015197568389,
+    "width": 1505.1671732522796,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobID"
+                }
+              },
+              "queryRef": "Jobs.JobID",
+              "nativeQueryRef": "JobID",
+              "active": true,
+              "displayName": "JobID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "RowLabel"
+                }
+              },
+              "queryRef": "Jobs.RowLabel",
+              "nativeQueryRef": "RowLabel",
+              "active": true,
+              "displayName": "RowLabel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "FitScore"
+                }
+              },
+              "queryRef": "Jobs.FitScore",
+              "nativeQueryRef": "FitScore",
+              "active": true,
+              "displayName": "FitScore"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "FitBand"
+                }
+              },
+              "queryRef": "Jobs.FitBand",
+              "nativeQueryRef": "FitBand",
+              "active": true,
+              "displayName": "FitBand"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "Eligible"
+                }
+              },
+              "queryRef": "Jobs.Eligible",
+              "nativeQueryRef": "Eligible",
+              "active": true,
+              "displayName": "Eligible"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "Applied"
+                }
+              },
+              "queryRef": "Jobs.Applied",
+              "nativeQueryRef": "Applied",
+              "active": true,
+              "displayName": "Applied"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "StudyID"
+                }
+              },
+              "queryRef": "Jobs.StudyID",
+              "nativeQueryRef": "StudyID",
+              "active": true,
+              "displayName": "StudyID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "WorkArrangement"
+                }
+              },
+              "queryRef": "Jobs.WorkArrangement",
+              "nativeQueryRef": "WorkArrangement",
+              "active": true,
+              "displayName": "WorkArrangement"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobSource"
+                }
+              },
+              "queryRef": "Jobs.JobSource",
+              "nativeQueryRef": "JobSource",
+              "active": true,
+              "displayName": "JobSource"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SearchTermRaw"
+                }
+              },
+              "queryRef": "Jobs.SearchTermRaw",
+              "nativeQueryRef": "SearchTermRaw",
+              "active": true,
+              "displayName": "SearchTermRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobFamily"
+                }
+              },
+              "queryRef": "Jobs.JobFamily",
+              "nativeQueryRef": "JobFamily",
+              "active": true,
+              "displayName": "JobFamily"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d4d0a2def69daa0f7455",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "JobID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c74d9a3aab158735e03e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "RowLabel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a9c1adb8615549b52dbc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "FitScore"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "34796ff4632c23d195ad",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "FitBand"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ba44ec81d2c6eb604705",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "Eligible"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1bf0a2150cd7184e0f14",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "Applied"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "68d6b6cd858e79ee3cbf",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "StudyID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1a5b206fe7db3625ad0f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "WorkArrangement"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "633c14ae83e02abf245b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "JobSource"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f2d5b5abb2248e5b9f34",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "SearchTermRaw"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "85eb8ef35978a72bee44",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Jobs"
+              }
+            },
+            "Property": "JobFamily"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

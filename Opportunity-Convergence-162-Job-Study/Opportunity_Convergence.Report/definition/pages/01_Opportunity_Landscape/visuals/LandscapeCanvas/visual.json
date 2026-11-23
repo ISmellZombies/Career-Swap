@@ -1,0 +1,512 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "LandscapeCanvas",
+  "position": {
+    "x": 48,
+    "y": 112,
+    "z": 0,
+    "height": 738,
+    "width": 1504,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+    "query": {
+      "queryState": {
+        "dataset": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobID"
+                }
+              },
+              "queryRef": "Jobs.JobID",
+              "nativeQueryRef": "JobID",
+              "active": true,
+              "displayName": "JobID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "StudyID"
+                }
+              },
+              "queryRef": "Jobs.StudyID",
+              "nativeQueryRef": "StudyID",
+              "active": true,
+              "displayName": "StudyID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobNo"
+                }
+              },
+              "queryRef": "Jobs.JobNo",
+              "nativeQueryRef": "JobNo",
+              "active": true,
+              "displayName": "JobNo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "EmployerLabel"
+                }
+              },
+              "queryRef": "Jobs.EmployerLabel",
+              "nativeQueryRef": "EmployerLabel",
+              "active": true,
+              "displayName": "EmployerLabel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobTitle"
+                }
+              },
+              "queryRef": "Jobs.JobTitle",
+              "nativeQueryRef": "JobTitle",
+              "active": true,
+              "displayName": "JobTitle"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "RowLabel"
+                }
+              },
+              "queryRef": "Jobs.RowLabel",
+              "nativeQueryRef": "RowLabel",
+              "active": true,
+              "displayName": "RowLabel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "LocationRaw"
+                }
+              },
+              "queryRef": "Jobs.LocationRaw",
+              "nativeQueryRef": "LocationRaw",
+              "active": true,
+              "displayName": "LocationRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "WorkArrangement"
+                }
+              },
+              "queryRef": "Jobs.WorkArrangement",
+              "nativeQueryRef": "WorkArrangement",
+              "active": true,
+              "displayName": "WorkArrangement"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobSource"
+                }
+              },
+              "queryRef": "Jobs.JobSource",
+              "nativeQueryRef": "JobSource",
+              "active": true,
+              "displayName": "JobSource"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "EmploymentType"
+                }
+              },
+              "queryRef": "Jobs.EmploymentType",
+              "nativeQueryRef": "EmploymentType",
+              "active": true,
+              "displayName": "EmploymentType"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "FitScore"
+                }
+              },
+              "queryRef": "Jobs.FitScore",
+              "nativeQueryRef": "FitScore",
+              "active": true,
+              "displayName": "FitScore"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "Eligible"
+                }
+              },
+              "queryRef": "Jobs.Eligible",
+              "nativeQueryRef": "Eligible",
+              "active": true,
+              "displayName": "Eligible"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "Applied"
+                }
+              },
+              "queryRef": "Jobs.Applied",
+              "nativeQueryRef": "Applied",
+              "active": true,
+              "displayName": "Applied"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "FitBand"
+                }
+              },
+              "queryRef": "Jobs.FitBand",
+              "nativeQueryRef": "FitBand",
+              "active": true,
+              "displayName": "FitBand"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "DecisionQuadrant"
+                }
+              },
+              "queryRef": "Jobs.DecisionQuadrant",
+              "nativeQueryRef": "DecisionQuadrant",
+              "active": true,
+              "displayName": "DecisionQuadrant"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "JobFamily"
+                }
+              },
+              "queryRef": "Jobs.JobFamily",
+              "nativeQueryRef": "JobFamily",
+              "active": true,
+              "displayName": "JobFamily"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "DutiesRaw"
+                }
+              },
+              "queryRef": "Jobs.DutiesRaw",
+              "nativeQueryRef": "DutiesRaw",
+              "active": true,
+              "displayName": "DutiesRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SearchTermRaw"
+                }
+              },
+              "queryRef": "Jobs.SearchTermRaw",
+              "nativeQueryRef": "SearchTermRaw",
+              "active": true,
+              "displayName": "SearchTermRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryStatus"
+                }
+              },
+              "queryRef": "Jobs.SalaryStatus",
+              "nativeQueryRef": "SalaryStatus",
+              "active": true,
+              "displayName": "SalaryStatus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryEntryRaw"
+                }
+              },
+              "queryRef": "Jobs.SalaryEntryRaw",
+              "nativeQueryRef": "SalaryEntryRaw",
+              "active": true,
+              "displayName": "SalaryEntryRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryMidRaw"
+                }
+              },
+              "queryRef": "Jobs.SalaryMidRaw",
+              "nativeQueryRef": "SalaryMidRaw",
+              "active": true,
+              "displayName": "SalaryMidRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalarySeniorRaw"
+                }
+              },
+              "queryRef": "Jobs.SalarySeniorRaw",
+              "nativeQueryRef": "SalarySeniorRaw",
+              "active": true,
+              "displayName": "SalarySeniorRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "ReceivedRaw"
+                }
+              },
+              "queryRef": "Jobs.ReceivedRaw",
+              "nativeQueryRef": "ReceivedRaw",
+              "active": true,
+              "displayName": "ReceivedRaw"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SuccessRaw"
+                }
+              },
+              "queryRef": "Jobs.SuccessRaw",
+              "nativeQueryRef": "SuccessRaw",
+              "active": true,
+              "displayName": "SuccessRaw"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "vega": [
+        {
+          "properties": {
+            "renderMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'svg'"
+                }
+              }
+            },
+            "jsonConfig": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{}'"
+                }
+              }
+            },
+            "jsonSpec": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\r\n  \"$schema\": \"https://vega.github.io/schema/vega-lite/v5.json\",\r\n  \"background\": \"#FAFCF9\",\r\n  \"config\": {\"font\":\"Segoe UI\",\"view\":{\"stroke\":null},\"axis\":{\"labelColor\":\"#597163\",\"titleColor\":\"#1D3329\",\"gridColor\":\"#E7F0EA\",\"labelFontSize\":12,\"titleFontSize\":13},\"title\":{\"font\":\"Segoe UI\",\"color\":\"#1D3329\",\"fontSize\":16,\"fontWeight\":600}},\r\n  \"vconcat\": [\r\n    {\"height\":78,\"hconcat\":[\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"calculate\":\"datum.Eligible ? 1 : 0\",\"as\":\"EligibleN\"},{\"calculate\":\"datum.Applied == 1 ? 1 : 0\",\"as\":\"AppliedN\"},{\"aggregate\":[{\"op\":\"count\",\"as\":\"N\"},{\"op\":\"sum\",\"field\":\"EligibleN\",\"as\":\"E\"},{\"op\":\"sum\",\"field\":\"AppliedN\",\"as\":\"A\"},{\"op\":\"average\",\"field\":\"FitScore\",\"as\":\"MeanFit\"}]}],\"width\":340,\"height\":72,\"layer\":[{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":34,\"fontWeight\":700,\"color\":\"#1D3329\",\"dy\":-9},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":32},\"text\":{\"field\":\"N\",\"type\":\"quantitative\",\"format\":\",.0f\"}}},{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":12,\"color\":\"#597163\"},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":63},\"text\":{\"value\":\"OPPORTUNITIES / OBSERVATIONS\"}}}]},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"calculate\":\"datum.Eligible ? 1 : 0\",\"as\":\"EligibleN\"},{\"aggregate\":[{\"op\":\"sum\",\"field\":\"EligibleN\",\"as\":\"N\"},{\"op\":\"count\",\"as\":\"D\"}]},{\"calculate\":\"datum.N/datum.D\",\"as\":\"Rate\"}],\"width\":340,\"height\":72,\"layer\":[{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":34,\"fontWeight\":700,\"color\":\"#FF0056\",\"dy\":-9},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":32},\"text\":{\"field\":\"N\",\"type\":\"quantitative\",\"format\":\",.0f\"}}},{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":12,\"color\":\"#597163\"},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":63},\"text\":{\"field\":\"Rate\",\"type\":\"quantitative\",\"format\":\".1%\"}}}]},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"calculate\":\"datum.Applied == 1 ? 1 : 0\",\"as\":\"AppliedN\"},{\"aggregate\":[{\"op\":\"sum\",\"field\":\"AppliedN\",\"as\":\"N\"},{\"op\":\"count\",\"as\":\"D\"}]},{\"calculate\":\"datum.N/datum.D\",\"as\":\"Rate\"}],\"width\":340,\"height\":72,\"layer\":[{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":34,\"fontWeight\":700,\"color\":\"#2CAE43\",\"dy\":-9},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":32},\"text\":{\"field\":\"N\",\"type\":\"quantitative\",\"format\":\",.0f\"}}},{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":12,\"color\":\"#597163\"},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":63},\"text\":{\"field\":\"Rate\",\"type\":\"quantitative\",\"format\":\".1%\"}}}]},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"aggregate\":[{\"op\":\"average\",\"field\":\"FitScore\",\"as\":\"M\"}]}],\"width\":340,\"height\":72,\"layer\":[{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":34,\"fontWeight\":700,\"color\":\"#2CAE43\",\"dy\":-9},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":32},\"text\":{\"field\":\"M\",\"type\":\"quantitative\",\"format\":\"0.0%\"}}},{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"fontSize\":12,\"color\":\"#597163\"},\"encoding\":{\"x\":{\"value\":8},\"y\":{\"value\":63},\"text\":{\"value\":\"MEAN SKILLS MATCH · FIT-001\"}}}]}\r\n    ]},\r\n    {\"hconcat\":[\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"calculate\":\"datum.Applied == 1 ? ''Applied'' : ''Not applied''\",\"as\":\"Slice\"},{\"aggregate\":[{\"op\":\"count\",\"as\":\"N\"}],\"groupby\":[\"Slice\"]}],\"width\":310,\"height\":220,\"title\":\"Applied vs not applied\",\"layer\":[{\"mark\":{\"type\":\"arc\",\"innerRadius\":54,\"outerRadius\":78,\"stroke\":\"#FAFCF9\",\"strokeWidth\":2},\"encoding\":{\"theta\":{\"field\":\"N\",\"type\":\"quantitative\"},\"color\":{\"field\":\"Slice\",\"type\":\"nominal\",\"scale\":{\"domain\":[\"Applied\",\"Not applied\"],\"range\":[\"#FF0056\",\"#BAF6D6\"]},\"legend\":{\"orient\":\"bottom\",\"title\":null}},\"tooltip\":[{\"field\":\"Slice\"},{\"field\":\"N\",\"type\":\"quantitative\",\"title\":\"Rows\"}]}},{\"data\":{\"name\":\"dataset\"},\"transform\":[{\"aggregate\":[{\"op\":\"count\",\"as\":\"N\"}]}],\"mark\":{\"type\":\"text\",\"fontSize\":22,\"fontWeight\":700,\"color\":\"#1D3329\"},\"encoding\":{\"text\":{\"field\":\"N\",\"type\":\"quantitative\",\"format\":\",.0f\"}}}]},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"aggregate\":[{\"op\":\"count\",\"as\":\"N\"}],\"groupby\":[\"WorkArrangement\"]}],\"width\":310,\"height\":220,\"title\":\"Work arrangement\",\"mark\":{\"type\":\"arc\",\"innerRadius\":54,\"outerRadius\":78,\"stroke\":\"#FAFCF9\",\"strokeWidth\":2},\"encoding\":{\"theta\":{\"field\":\"N\",\"type\":\"quantitative\"},\"color\":{\"field\":\"WorkArrangement\",\"type\":\"nominal\",\"scale\":{\"range\":[\"#FF0056\",\"#FFAD49\",\"#42ED9C\",\"#B2E76A\"]},\"legend\":{\"orient\":\"bottom\",\"title\":null}},\"tooltip\":[{\"field\":\"WorkArrangement\"},{\"field\":\"N\",\"type\":\"quantitative\",\"title\":\"Rows\"}]}},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"aggregate\":[{\"op\":\"count\",\"as\":\"N\"}],\"groupby\":[\"JobSource\"]}],\"width\":310,\"height\":220,\"title\":\"Job source\",\"mark\":{\"type\":\"arc\",\"innerRadius\":54,\"outerRadius\":78,\"stroke\":\"#FAFCF9\",\"strokeWidth\":2},\"encoding\":{\"theta\":{\"field\":\"N\",\"type\":\"quantitative\"},\"color\":{\"field\":\"JobSource\",\"type\":\"nominal\",\"scale\":{\"range\":[\"#FF0056\",\"#FFAD49\",\"#FFF873\",\"#42ED9C\",\"#2CAE43\"]},\"legend\":{\"orient\":\"bottom\",\"title\":null}},\"tooltip\":[{\"field\":\"JobSource\"},{\"field\":\"N\",\"type\":\"quantitative\",\"title\":\"Rows\"}]}},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"aggregate\":[{\"op\":\"count\",\"as\":\"N\"}],\"groupby\":[\"EmploymentType\"]}],\"width\":310,\"height\":220,\"title\":\"Employment type\",\"mark\":{\"type\":\"arc\",\"innerRadius\":54,\"outerRadius\":78,\"stroke\":\"#FAFCF9\",\"strokeWidth\":2},\"encoding\":{\"theta\":{\"field\":\"N\",\"type\":\"quantitative\"},\"color\":{\"field\":\"EmploymentType\",\"type\":\"nominal\",\"scale\":{\"range\":[\"#FF0056\",\"#FFAD49\",\"#42ED9C\"]},\"legend\":{\"orient\":\"bottom\",\"title\":null}},\"tooltip\":[{\"field\":\"EmploymentType\"},{\"field\":\"N\",\"type\":\"quantitative\",\"title\":\"Rows\"}]}}\r\n    ]},\r\n    {\"hconcat\":[\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"calculate\":\"datum.Eligible ? 1 : 0\",\"as\":\"EligibleN\"},{\"aggregate\":[{\"op\":\"count\",\"as\":\"Total\"},{\"op\":\"sum\",\"field\":\"EligibleN\",\"as\":\"Qualified\"}],\"groupby\":[\"JobSource\"]}],\"width\":710,\"height\":240,\"title\":\"Qualifying volume and rate by source\",\"layer\":[{\"mark\":{\"type\":\"bar\",\"color\":\"#E6EFE8\",\"cornerRadiusEnd\":4},\"encoding\":{\"y\":{\"field\":\"JobSource\",\"type\":\"nominal\",\"sort\":{\"field\":\"Total\",\"order\":\"descending\"},\"title\":null},\"x\":{\"field\":\"Total\",\"type\":\"quantitative\",\"title\":\"Observations\"},\"tooltip\":[{\"field\":\"JobSource\"},{\"field\":\"Total\"},{\"field\":\"Qualified\"}]}},{\"mark\":{\"type\":\"bar\",\"color\":\"#42ED9C\",\"cornerRadiusEnd\":4},\"encoding\":{\"y\":{\"field\":\"JobSource\",\"type\":\"nominal\",\"sort\":{\"field\":\"Total\",\"order\":\"descending\"},\"title\":null},\"x\":{\"field\":\"Qualified\",\"type\":\"quantitative\"},\"tooltip\":[{\"field\":\"JobSource\"},{\"field\":\"Total\"},{\"field\":\"Qualified\"}]}},{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"dx\":5,\"fontWeight\":600,\"color\":\"#1D3329\"},\"encoding\":{\"y\":{\"field\":\"JobSource\",\"type\":\"nominal\",\"sort\":{\"field\":\"Total\",\"order\":\"descending\"},\"title\":null},\"x\":{\"field\":\"Total\",\"type\":\"quantitative\"},\"text\":{\"field\":\"Qualified\",\"type\":\"quantitative\",\"format\":\",.0f\"}}}]},\r\n      {\"data\":{\"name\":\"dataset\"},\"transform\":[{\"calculate\":\"datum.Eligible ? 1 : 0\",\"as\":\"EligibleN\"},{\"aggregate\":[{\"op\":\"count\",\"as\":\"Total\"},{\"op\":\"sum\",\"field\":\"EligibleN\",\"as\":\"Qualified\"}],\"groupby\":[\"WorkArrangement\"]},{\"calculate\":\"datum.Qualified/datum.Total\",\"as\":\"Rate\"}],\"width\":710,\"height\":240,\"title\":\"Qualifying volume and rate by arrangement\",\"layer\":[{\"mark\":{\"type\":\"bar\",\"color\":\"#E6EFE8\",\"cornerRadiusEnd\":4},\"encoding\":{\"y\":{\"field\":\"WorkArrangement\",\"type\":\"nominal\",\"sort\":{\"field\":\"Total\",\"order\":\"descending\"},\"title\":null},\"x\":{\"field\":\"Total\",\"type\":\"quantitative\",\"title\":\"Observations\"},\"tooltip\":[{\"field\":\"WorkArrangement\"},{\"field\":\"Total\"},{\"field\":\"Qualified\"},{\"field\":\"Rate\",\"format\":\".1%\"}]}},{\"mark\":{\"type\":\"bar\",\"color\":\"#2CAE43\",\"cornerRadiusEnd\":4},\"encoding\":{\"y\":{\"field\":\"WorkArrangement\",\"type\":\"nominal\",\"sort\":{\"field\":\"Total\",\"order\":\"descending\"},\"title\":null},\"x\":{\"field\":\"Qualified\",\"type\":\"quantitative\"},\"tooltip\":[{\"field\":\"WorkArrangement\"},{\"field\":\"Total\"},{\"field\":\"Qualified\"},{\"field\":\"Rate\",\"format\":\".1%\"}]}},{\"mark\":{\"type\":\"text\",\"align\":\"left\",\"dx\":6,\"fontWeight\":600,\"color\":\"#1D3329\"},\"encoding\":{\"y\":{\"field\":\"WorkArrangement\",\"type\":\"nominal\",\"sort\":{\"field\":\"Total\",\"order\":\"descending\"},\"title\":null},\"x\":{\"field\":\"Total\",\"type\":\"quantitative\"},\"text\":{\"field\":\"Rate\",\"type\":\"quantitative\",\"format\":\".0%\"}}}]}\r\n    ]}\r\n  ],\r\n  \"spacing\": 16\r\n}\r\n'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vegaLite'"
+                }
+              }
+            },
+            "enableTooltips": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "version": {
+              "expr": {
+                "Literal": {
+                  "Value": "'6.4.3'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stateManagement": [
+        {
+          "properties": {
+            "viewportHeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "728D"
+                }
+              }
+            },
+            "viewportWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "1494D"
+                }
+              }
+            },
+            "supportFieldConfiguration": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"JobID\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"StudyID\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"JobNo\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"EmployerLabel\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"JobTitle\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"RowLabel\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"LocationRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"WorkArrangement\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"JobSource\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"EmploymentType\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"FitScore\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"Eligible\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"Applied\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"FitBand\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"DecisionQuadrant\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"JobFamily\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"DutiesRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"SearchTermRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"SalaryStatus\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"SalaryEntryRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"SalaryMidRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"SalarySeniorRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"ReceivedRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false},\"SuccessRaw\":{\"highlight\":false,\"highlightStatus\":false,\"highlightComparator\":false,\"format\":false,\"formatted\":false,\"names\":false}}'"
+                }
+              }
+            },
+            "denebMetaVersion": {
+              "expr": {
+                "Literal": {
+                  "Value": "'2'"
+                }
+              }
+            },
+            "consolidateFieldParameters": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "developer": [
+        {
+          "properties": {
+            "version": {
+              "expr": {
+                "Literal": {
+                  "Value": "'2.0.1.0'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "SalaryFilter4",
+  "position": {
+    "x": 1248,
+    "y": 70,
+    "z": 4000,
+    "height": 52,
+    "width": 286,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Jobs"
+                    }
+                  },
+                  "Property": "SalaryStatus"
+                }
+              },
+              "queryRef": "Jobs.SalaryStatus",
+              "nativeQueryRef": "SalaryStatus",
+              "active": true,
+              "displayName": "SalaryStatus"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

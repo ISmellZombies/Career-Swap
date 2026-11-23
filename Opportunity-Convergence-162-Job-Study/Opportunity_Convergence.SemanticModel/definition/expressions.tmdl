@@ -1,0 +1,5 @@
+expression SourceRoot = "SET_LOCAL_SOURCE_ROOT" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: a65f5021-0a1d-4969-a25d-d6c268503d60
+
+	annotation PBI_ResultType = Text
+

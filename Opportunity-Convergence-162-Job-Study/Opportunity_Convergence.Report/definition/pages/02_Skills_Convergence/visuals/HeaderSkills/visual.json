@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "HeaderSkills",
+  "position": {
+    "x": 47.416413373860181,
+    "y": 8.51063829787234,
+    "z": 7000,
+    "height": 53.495440729483285,
+    "width": 1134.3465045592704,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "query": {
+      "queryState": {}
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Skills Convergence",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "32px",
+                      "color": "#1d3329"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

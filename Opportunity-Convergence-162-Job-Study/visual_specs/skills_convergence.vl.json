@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#FAFCF9",
+  "width": 940,
+  "height": 560,
+  "data": {"name":"dataset"},
+  "transform": [
+    {"window":[{"op":"rank","as":"Rank"}],"sort":[{"field":"FitScore","order":"descending"},{"field":"StudyID","order":"ascending"},{"field":"JobNo","order":"ascending"}]},
+    {"filter":"datum.Rank <= 30"},
+    {"calculate":"datum.Eligible ? 1 : 0","as":"QualifiedN"}
+  ],
+  "layer": [
+    {"mark":{"type":"rect","opacity":0.55},"encoding":{"x":{"datum":0,"type":"quantitative","scale":{"domain":[0,1]},"axis":{"format":".0%","values":[0,0.25,0.5,0.75,0.8,1],"title":"Resume-to-posting skills compatibility (FIT-001)"}},"x2":{"datum":0.25},"y":{"field":"RowLabel","type":"nominal","sort":{"field":"FitScore","order":"descending"},"axis":{"labelLimit":260,"labelFontSize":11,"title":null}},"color":{"value":"#FFE5EF"}}},
+    {"mark":{"type":"rect","opacity":0.42},"encoding":{"x":{"datum":0.25,"type":"quantitative","scale":{"domain":[0,1]}},"x2":{"datum":0.5},"y":{"field":"RowLabel","type":"nominal","sort":{"field":"FitScore","order":"descending"},"axis":{"title":null}},"color":{"value":"#FFE2C6"}}},
+    {"mark":{"type":"rect","opacity":0.4},"encoding":{"x":{"datum":0.5,"type":"quantitative","scale":{"domain":[0,1]}},"x2":{"datum":0.75},"y":{"field":"RowLabel","type":"nominal","sort":{"field":"FitScore","order":"descending"},"axis":{"title":null}},"color":{"value":"#FFFBC1"}}},
+    {"mark":{"type":"rect","opacity":0.46},"encoding":{"x":{"datum":0.75,"type":"quantitative","scale":{"domain":[0,1]}},"x2":{"datum":0.8},"y":{"field":"RowLabel","type":"nominal","sort":{"field":"FitScore","order":"descending"},"axis":{"title":null}},"color":{"value":"#DDF4B7"}}},
+    {"mark":{"type":"rect","opacity":0.42},"encoding":{"x":{"datum":0.8,"type":"quantitative","scale":{"domain":[0,1]}},"x2":{"datum":1},"y":{"field":"RowLabel","type":"nominal","sort":{"field":"FitScore","order":"descending"},"axis":{"title":null}},"color":{"value":"#C8F5E2"}}},
+    {"mark":{"type":"bar","cornerRadiusEnd":3,"height":{"band":0.62}},"encoding":{"x":{"field":"FitScore","type":"quantitative","scale":{"domain":[0,1]},"axis":{"format":".0%","values":[0,0.25,0.5,0.75,0.8,1],"title":"Resume-to-posting skills compatibility (FIT-001)"}},"y":{"field":"RowLabel","type":"nominal","sort":{"field":"FitScore","order":"descending"},"axis":{"labelLimit":260,"labelFontSize":11,"title":null}},"color":{"condition":[{"test":"datum.FitScore >= 0.8","value":"#2CAE43"},{"test":"datum.FitScore >= 0.75","value":"#B2E76A"}],"value":"#FF0056"},"tooltip":[{"field":"Rank","title":"Rank"},{"field":"JobID"},{"field":"EmployerLabel","title":"Employer"},{"field":"JobTitle","title":"Job title"},{"field":"FitScore","format":".0%","title":"Skills match"},{"field":"StudyID"},{"field":"Applied"},{"field":"WorkArrangement"},{"field":"JobSource"},{"field":"SearchTermRaw","title":"Original search term"},{"field":"JobFamily"},{"field":"DutiesRaw","title":"Duties"}]}},
+    {"data":{"values":[{"x":0.75}]},"mark":{"type":"rule","color":"#1D3329","strokeDash":[5,4],"strokeWidth":2},"encoding":{"x":{"field":"x","type":"quantitative","scale":{"domain":[0,1]}}}},
+    {"data":{"values":[{"x":0.8}]},"mark":{"type":"rule","color":"#2CAE43","strokeWidth":2},"encoding":{"x":{"field":"x","type":"quantitative","scale":{"domain":[0,1]}}}}
+  ],
+  "config":{"font":"Segoe UI","view":{"stroke":null},"axis":{"labelColor":"#597163","titleColor":"#1D3329","gridColor":"#E7F0EA"}}
+}
